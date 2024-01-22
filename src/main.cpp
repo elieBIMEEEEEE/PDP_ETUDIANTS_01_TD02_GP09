@@ -38,7 +38,8 @@ void setup() {
   esp_sleep_enable_timer_wakeup(5000000ULL);
   takeReading();
   
-  delay(200);
+  Serial.flush();
+  delay(20);
   esp_deep_sleep_start();
 }
 
